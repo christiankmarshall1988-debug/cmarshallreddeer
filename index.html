@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> My Portfolio - Christian Marshall </title>
+</head>
+<body>
+ 	<h1> About Me </h1>
+	<p>I am currently taking a course in programming. </p>
+  <h2> My classes: </h2>
+  <ul> <li> <i> Math </i></li>
+    <li> <b> Science </b></li>
+    <li> <mark> Art </mark></li>
+<table>
+  <thead>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+  </thead>
+  <body>
+    <tr>
+      <td>3</td>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <fieldset>
+    <legend>Preferred Contact Method:</legend>
+    <label>
+            <input type="radio" name="contact" value="whatsapp">
+            Whatsapp
+    </label>
+    <label>
+            <input type="radio" name="contact" value="email">
+            Phone
+    </label>
+    <label>
+            <input type="radio" name="contact" value="fax">
+            Fax
+    </label>
+    <label>
+            <input type="radio" name="contact" value="text">
+            Text
+    </label>
+ </fieldset>
+  <fieldset>
+ <legend>Preferred Contact Method:</legend>
+ <label>
+ <input type="checkbox" name="contact" value="email">
+ Email
+ </label>
+ <label>
+ <input type="checkbox" name="contact" value="phone">
+ Phone
+ </label>
+ <label>
+ <input type="checkbox" name="contact" value="fax">
+ Fax
+ </label>
+ <label>
+ <input type="checkbox" name="contact" value="text">
+ Text
+ </label>
+ </fieldset>
+ <br>
+<label for=“country”> 
+    Country:
+</label> 
+<select id="country" name="country"> 
+  <option value="">Choose a country...</option> 
+  <option value="us">United States</option> 
+  <option value="ca">Canada</option> 
+  <option value="uk">United Kingdom</option> 
+</select>
+<br>
+<form action="/upload-image" method="POST" 
+enctype="multipart/form-data">
+ <fieldset>
+ <legend>Upload Profile Picture</legend>
+ <label>
+Profile Picture: 
+<input type="file" name="profile_picture"
+ accept="image/jpeg,image/png,image/gif"
+ required>
+ </label>
+ <small>Max file size: 5MB. Accepted formats: JPG, PNG, 
+GIF</small>
+ </fieldset>
+ </form>
+ <br>
+ <button type="submit" 
+formaction="/login">
+Log In
+</button> 
+<button type="submit" 
+formaction="/register">
+Register
+</button>
+<br>
+<label>
+Name:
+<input type="text" placeholder="Enter your 
+name" required maxlength="50">
+</label>
+<p></p>
+<br>
+<label>
+Postal Code:
+<input type="text" 
+pattern="[A-Za-z][0-9][A-Za-z] 
+[0-9][A-Za-z][0-9]" 
+placeholder="A1A 1A1" 
+title="Format: A1A 1A1">
+</label>
+<p></p>
+<br>
+ <label>
+Email Address:
+<input type="email" 
+placeholder="email@example.com" required>
+</label>
+<p></p>
+<label for="message">
+    Message:
+</label> 
+<textarea id="message" 
+name="message" rows="4" cols="50">
+</textarea>
+<br>
+      <form action="/submit" method="POST"> 
+    <label> Username:
+      <input type="text" 
+      name="username">
+    </label> 
+    <label>Password:
+      <input type="password" 
+      name="password">
+    </label>
+  </form>
+</body>
+</html>
+
